@@ -11,18 +11,23 @@
 <body class="bg-green-300">
 
     <div class=" flex justify-center mt-3 gap-2">
-        <input type="text" placeholder="Enter Your Name"
+        <input id="name" type="text" placeholder="Enter Your Name"
             class="bg-slate-300 text-red-900  border-blue-900 border-2 rounded-xl px-2">
-        <button class="text-blue-800 bg-blue-300 rounded-full px-1 ">Submit</button>
+        <button onclick="fetchdata()" class="text-blue-800 bg-blue-300 rounded-full px-1 ">Submit</button>
     </div>
     <div class="flex gap-1">
         <div class=" text-sm ml-3 mt-5 bg-slate-400 rounded-lg px-2 py-1 h-fit">Predicted Gender </div>
-        <div class="bg-yellow-200 text-yellow-700 h-8 w-16 rounded-xl mt-5"></div>
+        <div id="gen" class="bg-yellow-200 text-yellow-700 h-8 w-16 rounded-xl mt-5 p-1"></div>
 
     </div>
     <div class="flex gap-1">
         <div class="text-sm ml-3 mt-5 bg-slate-400 rounded-lg px-2 py-1 h-fit w-fit">Probability</div>
-        <div class="bg-yellow-200 text-yellow-700 h-8 w-16 rounded-xl mt-5"></div>
+        <div id="prob" class="bg-yellow-200 text-yellow-700 h-8 w-16 rounded-xl mt-5 p-1"></div>
+    </div>
+    <div class="flex gap-1">
+        <div class="text-sm ml-3 mt-5 bg-slate-400 rounded-lg px-2 py-1 h-fit w-fit">Number of people having this name
+        </div>
+        <div id="num" class="bg-yellow-200 text-yellow-700 h-8 w-16 rounded-xl mt-5 p-1"></div>
     </div>
     <script src="../gender-checker/gender-checker.js"></script>
 
